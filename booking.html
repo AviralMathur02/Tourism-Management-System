@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>Book Your Trip</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="booking-form">
+            <h2>Fill in Your Details</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="beach">Beautiful Beaches</option>
+                    <option value="mountain">Mountain Adventures</option>
+                    <option value="city">City Escapes</option>
+                </select>
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tourism Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
